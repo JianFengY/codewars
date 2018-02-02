@@ -23,6 +23,13 @@ def namelist(names):
         ' & ' + names[-1]['name'] if len(names) > 1 else names[0]['name']
 
 #     return ", ".join([name["name"] for name in names])[::-1].replace(",", "& ", 1)[::-1]
+    
+#     if len(names) > 1:
+#         return '{} & {}'.format(', '.join(name['name'] for name in names[:-1]), names[-1]['name'])
+#     elif names:
+#         return names[0]['name']
+#     else:
+#         return ''
 
 
 print(namelist([{'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'}, {'name': 'Homer'}, {'name': 'Marge'}]))
