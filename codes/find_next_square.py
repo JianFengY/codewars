@@ -32,6 +32,8 @@ def find_next_square(sq):
 #         return int((root + 1) ** 2)
 #     return -1
 
+#     return (math.sqrt(sq) + 1) ** 2 if math.sqrt(sq) % 1 == 0 else -1
+
     
 print(find_next_square(121))
 print(find_next_square(625))
