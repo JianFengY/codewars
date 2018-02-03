@@ -27,6 +27,11 @@ def find_next_square(sq):
     num = math.sqrt(sq)  # same as sq**0.5
     return int((num + 1) ** 2) if int(num) == num else -1
     
+#     root = sq ** 0.5
+#     if root.is_integer():
+#         return int((root + 1) ** 2)
+#     return -1
+
     
 print(find_next_square(121))
 print(find_next_square(625))
