@@ -19,11 +19,13 @@ delete_nth ([20,37,20,21],1) # return [20,37,21]
 def delete_nth(order, max_e):
     """delete occurrences of an element if it occurs more than n times"""
     return [x for i, x in enumerate(order) if order[i::-1].count(x) <= max_e]
+#     return [x for i, x in enumerate(order) if order[:i + 1].count(x) <= max_e]
 
 #     ans = []
 #     for o in order:
 #         if ans.count(o) < max_e: ans.append(o)
 #     return ans
+
 
 print(delete_nth([1, 1, 1, 1], 2))
 print(delete_nth([20, 37, 20, 21], 1))
